@@ -13,4 +13,5 @@ echo "nameserver "8.8.8.8 >> /etc/resolvconf/resolv.conf.d/head
 resolvconf -u
 echo "Downloading Docker Image and Run"
 sudo docker login -u meenakshi2017 -p ril123
-docker pull meenakshi2017/server   
+docker pull meenakshi2017/server 
+docker run  -p 8086:8086 -it meenakshi2017/server
