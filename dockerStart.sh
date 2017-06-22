@@ -7,7 +7,7 @@ apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
 #curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu trusty stable"
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get install -y docker-ce --force-yes
 #DNS IP address configuration
 echo "nameserver "8.8.8.8 >> /etc/resolvconf/resolv.conf.d/head
 resolvconf -u
